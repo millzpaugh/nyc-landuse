@@ -84,7 +84,7 @@
   </div>
   <script>
 
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYW1pbGx6cGF1Z2giLCJhIjoiY2o0YTdoZm90MHl0ejMzcXE1Y3JudDdjeiJ9.zqXrv4aYQFpAHIesVK7J1w';
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWlsbHpwYXVnaCIsImEiOiJja29kZHV1enIwMTc5MnBvNWo1YjB3dWN3In0.WKQm2S3pCmoAx4BuLSqanw';
     var map = new mapboxgl.Map({
         container: 'map', // container id
         style: 'mapbox://styles/amillzpaugh/cjasrm10q3t3c2rr0k13k179c', // stylesheet location
@@ -110,7 +110,7 @@
     map.on('click', function(event){
         var geometry = event.point;
         var params = {'layers':['lots']};
-        var features = map.queryRenderedFeatures(geometry, params); 
+        var features = map.queryRenderedFeatures(geometry, params);
 
         if(features.length){
             var lot = features[0];
